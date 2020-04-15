@@ -35,4 +35,15 @@ func main() {
 	//day2.2使用
 	text.Showyanghuisanjiao()
 
+	//day2.3使用
+	add_func := text.Add(1, 2)
+	fmt.Println(add_func())
+	fmt.Println(add_func())
+	fmt.Println(add_func())
+
+	add_func1 := text.Add1(1, 2)
+	fmt.Println(add_func1(1, 1))
+	fmt.Println(add_func1(0, 0))
+	fmt.Println(add_func1(2, 2))
+
 }
