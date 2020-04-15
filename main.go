@@ -32,4 +32,7 @@ func main() {
 		return x
 	})
 
+	//day2.2使用
+	text.Showyanghuisanjiao()
+
 }
