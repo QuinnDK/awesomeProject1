@@ -51,7 +51,6 @@ func main() {
 	*/
 
 	//day3.1.go 使用
-
 	var C1 text.Circle
 	C1.Radius = 10.00
 	fmt.Println("圆的面积：", C1.GetArea())
