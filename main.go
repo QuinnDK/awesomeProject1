@@ -58,4 +58,15 @@ func main() {
 	//day3.2.go使用
 	text.Lingxing()
 
+	//day4.1.go使用
+	nums := []int{}
+	var i int
+	for i = 0; i < 10; i++ {
+		nums = text.GetYangHuiTriangleNextLine(nums)
+		fmt.Println(nums)
+	}
+	fmt.Println()
+
+	text.Triangle(13)
+
 }
