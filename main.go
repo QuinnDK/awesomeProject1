@@ -66,7 +66,18 @@ func main() {
 		fmt.Println(nums)
 	}
 	fmt.Println()
-
 	text.Triangle(13)
+
+	//day5.1.go使用
+	/* 数组长度为 5 */
+	fmt.Println()
+	var balance = [5]float32{1000, 2, 3, 17, 50}
+	var avg float32
+
+	/* 数组作为参数传递给函数 */
+	avg = text.GetAverage(balance, 5)
+
+	/* 输出返回的平均值 */
+	fmt.Printf("平均值为: %f ", avg)
 
 }
