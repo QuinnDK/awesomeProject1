@@ -79,5 +79,16 @@ func main() {
 
 	/* 输出返回的平均值 */
 	fmt.Printf("平均值为: %f ", avg)
+	fmt.Println()
+
+	//day6.1使用
+	var book1 text.Books
+	book1.Title = "book1"
+	book1.Auther = "Dongkun"
+	book1.Book_id = 1
+	text.Changebook(book1) //传递实参并不能改变其参数值
+	fmt.Println(book1)
+	text.Changebook1(&book1)
+	fmt.Println(book1)
 
 }
