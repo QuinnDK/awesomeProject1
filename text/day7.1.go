@@ -12,7 +12,6 @@ import "fmt"
 切片是可索引的，并且可以由 len() 方法获取长度。
 切片提供了计算容量的方法 cap() 可以测量切片最长可以达到多少
 */
-
 func PrintSlice(x []int) {
 	fmt.Printf("len=%d cap=%d slice=%v\n", len(x), cap(x), x)
 	if x == nil {
