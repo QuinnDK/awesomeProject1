@@ -91,4 +91,12 @@ func main() {
 	text.Changebook1(&book1)
 	fmt.Println(book1)
 
+	//day7.1.go 使用
+	fmt.Println()
+	//var numbers []int
+	numbers := []int{0, 1, 2, 3, 4, 5, 6, 7, 8}
+	text.PrintSlice(numbers)
+	text.PrintSlice(numbers[0:4]) //len为实际长度，cap为左标到末端的容量
+	text.PrintSlice(numbers[1:4])
+
 }
