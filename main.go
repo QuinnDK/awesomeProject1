@@ -100,4 +100,12 @@ func main() {
 	text.PrintSlice(numbers[0:4]) //len为实际长度，cap为左标到末端的容量
 	text.PrintSlice(numbers[1:4])
 
+	fmt.Println()
+	//day8.1.go使用
+	text.SliceTest()
+	text.TwoDimensionArray()
+
+	//day8.2.go
+	text.ChangeSliceTest()
+
 }
