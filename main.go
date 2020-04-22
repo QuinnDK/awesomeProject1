@@ -108,4 +108,15 @@ func main() {
 	//day8.2.go
 	text.ChangeSliceTest()
 
+	//day9.1.go
+	text.Makemap()
+	//day9.2.go使用
+	text.GetInstance()
+	text.Put("a", "a_put")
+	text.Put("b", "b_put")
+	fmt.Println(text.Get("a"))
+	fmt.Println(text.Get("b"))
+	text.Put("p", "p_put")
+	fmt.Println(text.Get("p"))
+
 }
