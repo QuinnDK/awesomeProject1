@@ -119,4 +119,10 @@ func main() {
 	text.Put("p", "p_put")
 	fmt.Println(text.Get("p"))
 
+	fmt.Println("-----------------------")
+
+	//day10.1.go 使用
+	var x int = 15
+	fmt.Printf("%d 的阶乘是 %d\n", x, text.Factorial(uint64(x)))
+
 }
