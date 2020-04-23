@@ -128,5 +128,8 @@ func main() {
 	for i = 0; i < 10; i++ {
 		fmt.Printf("%d\t", text.Fibonacci(i))
 	}
-
+	fmt.Println(231412)
+	for i = 0; i < 10; i++ {
+		fmt.Printf("%d\t", text.Fibonacci1(i))
+	}
 }

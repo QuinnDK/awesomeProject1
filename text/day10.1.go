@@ -16,3 +16,18 @@ func Fibonacci(n int) int {
 	}
 	return Fibonacci(n-2) + Fibonacci(n-1)
 }
+
+//第二种
+func fibonacci2(n int) (int, int) {
+	if n < 2 {
+		return 0, n
+	}
+	a, b := fibonacci2(n - 1)
+	return b, a + b
+}
+
+func Fibonacci1(n int) int {
+	var b, _ int
+	_, b = fibonacci2(n)
+	return b
+}
