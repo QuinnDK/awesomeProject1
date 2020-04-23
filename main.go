@@ -124,5 +124,9 @@ func main() {
 	//day10.1.go 使用
 	var x int = 15
 	fmt.Printf("%d 的阶乘是 %d\n", x, text.Factorial(uint64(x)))
+	fmt.Println()
+	for i = 0; i < 10; i++ {
+		fmt.Printf("%d\t", text.Fibonacci(i))
+	}
 
 }
