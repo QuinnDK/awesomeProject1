@@ -150,4 +150,18 @@ func main() {
 
 	phone = new(text.Int)
 	phone.Call()
+
+	fmt.Println()
+	//day11.2.go
+	var phone11 text.PPhone
+
+	//先实例化第一个接口
+	phone11 = new(text.Phone1)
+	phone11.Call1()
+	phone11.Call2()
+
+	//实例化第二个接口
+	phone11 = new(text.Phone2)
+	phone11.Call1()
+	phone11.Call2()
 }
