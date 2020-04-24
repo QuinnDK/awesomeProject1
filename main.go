@@ -164,4 +164,13 @@ func main() {
 	phone11 = new(text.Phone2)
 	phone11.Call1()
 	phone11.Call2()
+
+	fmt.Println()
+	//day11.3.go
+	var dageda text.PPPhone
+	dageda = new(text.Huawei)
+	dageda.Takephoto()
+	r := dageda.Call3(20)
+	fmt.Println(r)
+
 }
