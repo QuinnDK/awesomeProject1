@@ -137,4 +137,17 @@ func main() {
 	fmt.Println()
 	fmt.Println(text.Get_sqrt(2))
 	fmt.Println(text.Get_sqrt(3))
+
+	//day11.1.go使用
+	fmt.Println()
+	var phone text.Phone //接口定义
+
+	phone = new(text.NokiaPhone)
+	phone.Call()
+
+	phone = new(text.IPhone)
+	phone.Call()
+
+	phone = new(text.Int)
+	phone.Call()
 }
