@@ -173,4 +173,21 @@ func main() {
 	r := dageda.Call3(20)
 	fmt.Println(r)
 
+	////day12.1.go
+	fmt.Println()
+	v, r := text.Div(100, 2)
+	if string(0) != r {
+		fmt.Println("(1)fail:", r)
+	} else {
+		fmt.Println("(1)succeed:", v)
+	}
+	// 错误调用
+	v, r = text.Div(100, 0)
+	if string(0) != r {
+		fmt.Println("(2)fail:", r)
+	} else {
+		fmt.Println("(2)succeed:", v)
+	}
+	//暂时还没懂数据类型转换，Div返回的是结构体类型，
+
 }
