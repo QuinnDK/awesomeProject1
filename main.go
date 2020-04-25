@@ -2,6 +2,7 @@ package main
 
 import (
 	"awesomeProject1/text"
+	"awesomeProject1/work"
 	"fmt"
 )
 
@@ -188,6 +189,17 @@ func main() {
 	} else {
 		fmt.Println("(2)succeed:", v)
 	}
-	//暂时还没懂数据类型转换，Div返回的是结构体类型，
+	//暂时还没懂数据类型转换，Div返回的是结构体类型，判断的确实bool类型
+
+	//day12.2.go
+	fmt.Println()
+	// 正常情况
+	if result, errorMsg := work.Divide(100, 10); errorMsg == "" {
+		fmt.Println("100/10 = ", result)
+	}
+	// 当除数为零的时候会返回错误信息
+	if _, errorMsg := work.Divide(100, 0); errorMsg != "" {
+		fmt.Println("errorMsg is: ", errorMsg)
+	}
 
 }
