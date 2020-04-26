@@ -202,4 +202,21 @@ func main() {
 		fmt.Println("errorMsg is: ", errorMsg)
 	}
 
+	//day13.1.go
+	fmt.Println()
+	go work.Say("world")
+	work.Say("hello")
+
+	//day13.2.go
+	fmt.Println()
+	s := []int{7, 2, 8, -9, 4, 0}
+
+	c := make(chan int)
+	go work.Sum(s[:len(s)/2], c)
+	go work.Sum(s[len(s)/2:], c)
+	x, y := <-c, <-c // 从通道 c 中接收
+
+	//通道内数据采取先进后出
+	fmt.Println(x, y, x+y)
+
 }
